@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const axios = require('axios');
+const auth = require('./routes/auth')
 
 router.get('/check-profile', async (req, res) => {
     const { username } = req.query;
